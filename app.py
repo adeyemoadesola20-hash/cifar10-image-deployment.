@@ -38,13 +38,17 @@ if uploaded_file is not None:
     img_array = img_array.astype('float32') / 255.0
     img_tensor = np.expand_dims(img_array, axis=0)
     
-    # Run REAL mathematical inference on your weights
+    # Run mathematical inference on your real weights
     raw_outputs = session.run(None, {input_name: img_tensor})
-    probabilities = raw_outputs[0][0]
+    logits = raw_outputs[0][0]
+    
+    # Apply Softmax activation mathematically to scale logits into true 0-100% probabilities
+    exp_logits = np.exp(logits - np.max(logits)) # Stable softmax subtraction
+    probabilities = exp_logits / np.sum(exp_logits)
     
     predicted_index = np.argmax(probabilities)
     predicted_class = class_names[predicted_index]
-    confidence = (np.exp(probabilities) / np.sum(np.exp(probabilities)))[predicted_index] * 100
+    confidence = probabilities[predicted_index] * 100
 
     st.subheader(f"Prediction Output: **{predicted_class}**")
     st.write(f"Model Inference Confidence: **{confidence:.2f}%**")
