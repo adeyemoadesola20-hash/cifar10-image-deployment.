@@ -27,9 +27,9 @@ Raw machine learning models trapped inside Jupyter Notebooks (`.ipynb` files) ar
 
 ## 🚀 Live Links & Project Assets
 
-* **Live Deployed Application:** [PASTE YOUR STREAMLIT APP LINK HERE]
-* **Video Walkthrough Demo:** [PASTE YOUR LOOM VIDEO LINK HERE]
-* **Professional Social Update:** [PASTE YOUR LINKEDIN POST LINK HERE]
+* **Live Deployed Application:** [cifar10-image-deployment-jmfrpp3u6rnzxkcjwyo6we]
+* **Video Walkthrough Demo:** [https://www.loom.com/share/f07b975cfc7440beb94b206d2ad0cb3b]
+* **Professional Social Update:** [https://www.linkedin.com/posts/adeyemograce_hey-everyone-i-just-hit-my-week-7-milestone-activity-7474385675585302528-Jm0z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAgrGoBFDpcN21nbddP49OY_zPti8EGkkQ]
 
 ---
 
